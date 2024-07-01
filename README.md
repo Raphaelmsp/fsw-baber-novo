@@ -1,9 +1,3 @@
-![fsw-barber-capa](https://github.com/Gkanawati/fsw-barber/assets/87530595/efdee25a-8553-40d4-8c74-6bdbfc180d84)
-
-<p align="center" style='margin-top: 20px;'>
-  <img alt="Barbershop App - A maneira mais fácil de ficar na régua!" width='240px' src="https://github.com/Gkanawati/fsw-barber/assets/87530595/6930ea67-c70f-4756-901d-89b0b81c31dd" />
-</p>
-
 ## 🚀 Projeto
 
 Aplicação para realizar agendamentos na sua Barbearia preferida.

@@ -1,5 +1,6 @@
 "use client";
 
+import { Tooltip } from '@mui/material'
 import SideMenu from '@/app/_components/side-menu';
 import { Button } from '@/app/_components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/app/_components/ui/sheet';
@@ -22,15 +23,19 @@ const BarbershopInfo = ({ barbershop }: BarbershopInfoProps) => {
   return (
     <div>
       <div className="h-[250px] w-full relative">
+      <Tooltip title="Voltar ao início">
         <Button onClick={handleBackNavigation} size='icon' variant='outline' className='z-50 absolute top-4 left-4'>
           <ChevronLeftIcon />
         </Button>
+      </Tooltip>
 
         <Sheet>
           <SheetTrigger asChild>
+          <Tooltip title="Menu">
             <Button size='icon' variant='outline' className='z-50 absolute top-4 right-4'>
               <MenuIcon />
             </Button>
+            </Tooltip>
           </SheetTrigger>
 
           <SheetContent className='p-0'>

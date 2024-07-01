@@ -1,6 +1,6 @@
 "use client";
 
-
+import { Tooltip } from '@mui/material'
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { Avatar, AvatarImage } from './ui/avatar';
@@ -17,7 +17,7 @@ const SideMenu = () => {
   }
 
   function handleSignIn() {
-    signIn();
+    signIn("google");
   }
 
   return (
@@ -39,10 +39,11 @@ const SideMenu = () => {
               {data.user?.name}
             </h2>
           </div>
-
+          <Tooltip title="Desconectar Conta">
           <Button variant="secondary" size='icon'>
             <LogOutIcon onClick={handleSignOut} size={18} />
           </Button>
+          </Tooltip>
         </div>
       ) : (
         <div className='flex flex-col gap-3 px-5 py-6'>
