@@ -27,7 +27,7 @@ export function BookingInfo({ booking }: BookingInfoProps) {
         <div className="flex justify-between">
           <h3 className="text-gray-400 text-sm">Data</h3>
           <h4 className={`text-sm ${booking.date ? '' : 'text-gray-400'}`}>
-            {booking.date ? format(booking.date, "dd 'de' MMMM", { locale: ptBR }) : "-"}
+            {booking.date ? format(booking.date, "dd 'de' MMMM 'de' yyyy", { locale: ptBR }) : "-"}
           </h4>
         </div>
 
