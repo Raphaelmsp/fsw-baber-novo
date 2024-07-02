@@ -45,9 +45,9 @@ npm run dev
 
 ## 🔗 Link do Projeto
 
-<..../>
+<....falta fazer deploy/>
 
-## 📱 Telas
+## 📱 Telas flata fazer
 
 <div align='center' style="justify-content: center; align-items: center;">
 
