@@ -57,7 +57,7 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
 
   function handleBooking() {
     if (!isAuthenticated) {
-      return signIn();
+      return signIn("google");
     }
 
     // TODO: open modal agendamento
