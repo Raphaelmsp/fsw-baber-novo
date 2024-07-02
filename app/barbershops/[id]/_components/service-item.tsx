@@ -85,7 +85,7 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
 
       setSheetIsOpen(false);
       toast("Reserva realizada com sucesso!", {
-        description: format(dateBooking, "dd 'de' MMMM 'às' HH:mm", { locale: ptBR }),
+        description: format(dateBooking, "dd 'de' MMMM 'de' yyyy 'às' HH:mm", { locale: ptBR }),
         action: {
           label: "Visualizar",
           onClick: () => router.push('/bookings'),
@@ -165,12 +165,12 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
                       Fazer Reserva
                     </SheetTitle>
                   </SheetHeader>
-
-                  <Calendar
+                  
+                  <div className="py-6">
+                  <Calendar 
                     mode="single"
                     selected={date}
                     onSelect={handleDateClick}
-                    className="mt-3"
                     locale={ptBR}
                     fromDate={new Date()}
                     styles={{
@@ -197,7 +197,7 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
                       },
                     }}
                   />
-
+                  </div>
                   {date && (
                     <div className="flex gap-3 py-6 px-5 border-y border-solid border-secondary
                     overflow-x-auto [&::-webkit-scrollbar]:hidden">
