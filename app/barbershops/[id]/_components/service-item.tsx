@@ -85,7 +85,7 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
 
       setSheetIsOpen(false);
       toast("Reserva realizada com sucesso!", {
-        description: format(dateBooking, "dd 'de' MMMM 'de' yyyy 'às' HH:mm", { locale: ptBR }),
+        description: format(dateBooking, "dd 'de' MMMM 'de' yyyy 'às' HH:mm'.'", { locale: ptBR }),
         action: {
           label: "Visualizar",
           onClick: () => router.push('/bookings'),
