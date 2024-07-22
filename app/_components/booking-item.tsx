@@ -88,6 +88,7 @@ const BookingItem = ({ booking }: BookingItemProps) => {
               <p className='text-sm capitalize'>{format(booking.date, "iii", { locale: ptBR })}</p>
               <p className='text-sm'>{format(booking.date, "HH:mm", { locale: ptBR })}</p>
             </div>
+            
           </CardContent>
         </Card>
       </SheetTrigger>
@@ -120,6 +121,7 @@ const BookingItem = ({ booking }: BookingItemProps) => {
                     <h3 className='text-xs overflow-hidden text-nowrap text-ellipsis'>
                       {booking.barbershop.address}
                     </h3>
+                    
                   </div>
                 </CardContent>
               </Card>

@@ -28,6 +28,7 @@ model Barbershop {
   imageUrl String
   services Service[]
   bookings Booking[]
+  phone    String
 }
 
 model Service {
